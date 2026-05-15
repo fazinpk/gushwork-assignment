@@ -6,7 +6,11 @@
   --color-secondary: #111827;
   --color-light: #ffffff;
   --color-dark: #0d0d0d;
-  --color-neutral: #4d545c;
+  --color-neutral-800: #4d545c;
+  --color-neutral-400: #959ba4;
+
+  --light-4: #f9fafb;
+  --light-2: #e5e7eb;
 
   --text-base: 16px;
   --text-sm: 14px;
@@ -29,7 +33,7 @@ body {
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 100px;
 }
 
 .buttons-group {
@@ -44,6 +48,10 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+.button:active {
+  opacity: 0.7;
+}
+
 .button-blue {
   background-color: var(--color-primary);
   color: var(--color-light);
@@ -53,14 +61,6 @@ body {
   background-color: #1f2c75;
 
   box-shadow: 0 10px 24px rgba(43, 57, 144, 0.25);
-}
-
-.button-blue:active {
-  background-color: #162055;
-
-  box-shadow: 0 4px 12px rgba(43, 57, 144, 0.2);
-
-  transform: translateY(-10px);
 }
 
 .secondary-btn {
@@ -79,10 +79,13 @@ body {
   box-shadow: 0 8px 20px rgba(43, 57, 144, 0.2);
 }
 
-.secondary-btn:active {
-  box-shadow: 0 4px 12px rgba(43, 57, 144, 0.2);
-
-  transform: translateY(-10px);
+.download-button {
+  border: 1px solid var(--color-light);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-light);
+  margin: 0 auto;
 }
 
 .badge-group {

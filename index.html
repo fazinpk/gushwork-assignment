@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="icon" type="image/svg+xml" href="./assets/images/logo.svg" />
     <link rel="stylesheet" href="./styles/default.css" />
     <link rel="stylesheet" href="./styles/common.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/table.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +19,7 @@
       rel="stylesheet"
     />
 
-    <title>Document</title>
+    <title>Mangalam HDPE Pipes</title>
   </head>
   <body>
     <header class="header-wrapper">
@@ -93,7 +96,7 @@
             <div class="certifications">
               <div class="certification-tag">
                 <img
-                  src="./assets/icons/BIS-Hallmark-Color.svg"
+                  src="./assets/icons/BIS-hallmark-color.svg"
                   alt=""
                   srcset=""
                 />
@@ -251,11 +254,64 @@
             </tbody>
           </table>
         </div>
+
+        <button
+          id="downloadDatasheetBtn"
+          class="button secondary-btn download-button"
+        >
+          <img src="./assets/icons/download.svg" alt="" srcset="" />
+          <span>Download Full Technical Datasheet</span>
+        </button>
       </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer></footer>
+    <footer>
+      <div class="container">
+        
+      </div>
+    </footer>
+
+    <!-- Modal Popup -->
+    <div id="datasheetModal" class="modal-overlay" aria-hidden="true">
+      <div
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <button class="modal-close" type="button" aria-label="Close modal">
+          <img src="./assets/icons/cross.svg" alt="Close Button" srcset="" />
+        </button>
+
+        <div class="modal-header">
+          <h3 id="modalTitle">Let us email the entire catalogue to you</h3>
+        </div>
+
+        <form class="modal-form">
+          <div class="form-fields">
+            <label>
+              Your Email*
+              <input
+                type="email"
+                name="email"
+                placeholder="example@gmail.com"
+                required
+              />
+            </label>
+
+            <label>
+              Your Contact (Optional)
+              <input type="tel" name="phone" placeholder="+91-0000000000" />
+            </label>
+          </div>
+          <div class="download-brochure-wrapper">
+            <button type="submit" class="button button-blue button-header" disabled>
+              Download Brochure
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
   <script src="./script.js"></script>
 </html>

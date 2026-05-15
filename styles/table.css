@@ -1,0 +1,37 @@
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  margin-block: 56px;
+}
+
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.spec-table th {
+  text-align: left;
+  background: #374151;
+  padding: 12px 24px;
+  font-weight: var(--weight-medium);
+  color: var(--color-light);
+  letter-spacing: 0.5px;
+}
+
+.spec-table td {
+  padding: 16px 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.85);
+  background-color: #1f2937;
+  font-weight: var(--weight-medium);
+  transition: all 0.3s ease;
+}
+
+.spec-table tr:hover td {
+  background-color: #2b3648;
+}

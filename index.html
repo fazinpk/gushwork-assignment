@@ -4,19 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="icon" type="image/svg+xml" href="./assets/images/logo.svg" />
     <link rel="stylesheet" href="./styles/default.css" />
     <link rel="stylesheet" href="./styles/common.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/table.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
 
-    <title>Document</title>
+    <title>Mangalam HDPE Pipes</title>
   </head>
   <body>
     <header class="header-wrapper">
@@ -29,233 +33,440 @@
             />
           </a>
 
-          <nav>
+          <nav aria-label="Primary navigation">
             <ul class="nav-links">
               <li><a href="#">About Us</a></li>
               <li><a href="#">Products</a></li>
             </ul>
-            <button class="button button-blue button-header">Contact Us</button>
+            <button type="button" class="button button-blue button-header">
+              Contact Us
+            </button>
           </nav>
         </div>
       </div>
     </header>
 
-    <section class="product-hero">
+    <main id="mainContent">
+      <section class="product-hero">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="#">Products</a>
+            <span>></span>
+            <span>Two For One Twister</span>
+          </div>
+
+          <div class="product-content">
+            <div class="product-gallery">
+              <div class="main-image-wrapper">
+                <img
+                  id="productImage"
+                  src="./assets/images/hero-img.png"
+                  alt="Premium HDPE Pipes"
+                />
+
+                <div class="magnifier-lens"></div>
+              </div>
+
+              <div class="zoom-result"></div>
+
+              <div class="thumbnail-wrapper">
+                <div class="thumbnail"></div>
+                <div class="thumbnail"></div>
+                <div class="thumbnail"></div>
+                <div class="thumbnail"></div>
+                <div class="thumbnail"></div>
+              </div>
+            </div>
+
+            <div class="product-details">
+              <div class="certifications">
+                <div class="certification-tag">
+                  <img
+                    src="./assets/icons/BIS-hallmark-color.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <span> BIS Certified </span>
+                </div>
+
+                <div class="certification-tag">
+                  <img
+                    src="./assets/icons/ISI-Mark-Black.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <span> ISO Certified </span>
+                </div>
+
+                <div class="certification-tag">
+                  <img
+                    src="./assets/icons/CE Certification.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <span> CE Certified </span>
+                </div>
+              </div>
+
+              <h1 class="product-title">
+                Premium HDPE Pipes & Coils for Modern Infrastructure
+              </h1>
+
+              <!-- Features -->
+              <ul class="feature-list">
+                <li>Leak-Proof Fusion Joints</li>
+                <li>Chemical Resistance</li>
+                <li>50+ Year Service Life</li>
+                <li>Flexible Installation</li>
+                <li>Flexible Installation</li>
+              </ul>
+
+              <!-- Pricing Card -->
+              <div class="pricing-card">
+                <div class="price-wrapper">
+                  <span class="price-label">Price Range</span>
+
+                  <p class="price">₹4,80,000 - 7,90,000</p>
+                </div>
+
+                <div class="badge-group">
+                  <div class="badge badge-yellow">Shipping: 6-12 days</div>
+
+                  <div class="badge badge-yellow">
+                    Returns: If returned within 7 days
+                  </div>
+
+                  <div class="badge badge-gray">
+                    Certifications: ISO Certified, BIS Certified
+                  </div>
+                </div>
+              </div>
+
+              <!-- CTA Buttons -->
+              <div class="buttons-group">
+                <button
+                  type="button"
+                  class="button button-blue button-hero-primary"
+                >
+                  Get Custom Quote
+                </button>
+
+                <button type="button" class="button secondary-btn">
+                  View Technical Specs
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <section class="trusted-companies">
+            <p class="trusted-text">
+              Trusted by Hundreds of Companies Globally
+            </p>
+
+            <div class="marquee">
+              <div class="marquee-track">
+                <img
+                  src="./assets/images/euroflex-logo.svg"
+                  alt="Euroflex logo"
+                />
+                <img
+                  src="./assets/images/euroflex-logo.svg"
+                  alt="Euroflex logo"
+                />
+                <img
+                  src="./assets/images/euroflex-logo.svg"
+                  alt="Euroflex logo"
+                />
+                <img
+                  src="./assets/images/euroflex-logo.svg"
+                  alt="Euroflex logo"
+                />
+                <img
+                  src="./assets/images/euroflex-logo.svg"
+                  alt="Euroflex logo"
+                />
+                <img
+                  src="./assets/images/euroflex-logo.svg"
+                  alt="Euroflex logo"
+                />
+                <img
+                  src="./assets/images/euroflex-logo.svg"
+                  alt="Euroflex logo"
+                />
+                <img
+                  src="./assets/images/euroflex-logo.svg"
+                  alt="Euroflex logo"
+                />
+                <img
+                  src="./assets/images/euroflex-logo.svg"
+                  alt="Euroflex logo"
+                />
+                <img
+                  src="./assets/images/euroflex-logo.svg"
+                  alt="Euroflex logo"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="specifications-section">
+        <div class="container">
+          <div class="specifications-title-sec">
+            <h2>Technical Specifications at a Glance</h2>
+            <p>
+              Comprehensive performance data demonstrating our commitment to
+              quality and engineering excellence.
+            </p>
+          </div>
+
+          <div class="table-wrapper">
+            <table class="spec-table">
+              <tbody>
+                <tr>
+                  <th>PARAMETER</th>
+                  <th>SPECIFICATION</th>
+                </tr>
+
+                <tr>
+                  <td>Pipe Diameter Range</td>
+                  <td>20mm to 1200mm (3/4" to 48")</td>
+                </tr>
+
+                <tr>
+                  <td>Pressure Ratings</td>
+                  <td>PN 2.5, PN 4, PN 6, PN 8, PN 10, PN 12.5, PN 16</td>
+                </tr>
+
+                <tr>
+                  <td>Standard Dimension Ratio</td>
+                  <td>SDR 33, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11</td>
+                </tr>
+
+                <tr>
+                  <td>Operating Temperature</td>
+                  <td>-40°C to +60°C (140°F to 140°F)</td>
+                </tr>
+
+                <tr>
+                  <td>Service Life</td>
+                  <td>50+ years at 20 degrees C, PN 10</td>
+                </tr>
+
+                <tr>
+                  <td>Material Density</td>
+                  <td>0.95–0.96 g/cm³</td>
+                </tr>
+
+                <tr>
+                  <td>Certification Standards</td>
+                  <td>IS 4984, ISO 4427, ASTM D3035</td>
+                </tr>
+
+                <tr>
+                  <td>Joint Type</td>
+                  <td>Butt Fusion, Electrofusion, Mechanical</td>
+                </tr>
+
+                <tr>
+                  <td>Coil Length</td>
+                  <td>Up to 500m for smaller diameters</td>
+                </tr>
+
+                <tr>
+                  <td>Country of Origin</td>
+                  <td>India</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <button
+            type="button"
+            id="downloadDatasheetBtn"
+            class="button secondary-btn download-button"
+          >
+            <img src="./assets/icons/download.svg" alt="" aria-hidden="true" />
+            <span>Download Full Technical Datasheet</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
       <div class="container">
-        <!-- Breadcrumb -->
-        <div class="breadcrumb">
-          <a href="#">Products</a>
-          <span>></span>
-          <span>Two For One Twister</span>
+        <div class="footer-top-card">
+          <div class="footer-brand">
+            <img src="./assets/images/logo.svg" alt="Mangalam HDPE Pipes" />
+          </div>
+
+          <h5 class="footer-heading">
+            Premium <span>HDPE Pipes & Fittings Manufacturer</span>
+            in South India
+          </h5>
         </div>
 
-        <!-- Main Content -->
-        <div class="product-content">
-          <!-- LEFT SIDE -->
-          <!-- <div class="product-gallery">
-            <div class="main-image-wrapper">
-              <button class="carousel-btn prev">←</button>
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h4>About Us</h4>
 
-              <img
-                src="./assets/images/product-main.png"
-                alt="Premium HDPE Pipes"
-              />
-
-              <button class="carousel-btn next">→</button>
-            </div>
-
-            <div class="thumbnail-list">
-              <button class="thumbnail active">
-                <img src="./assets/images/thumb-1.png" alt="" />
-              </button>
-
-              <button class="thumbnail">
-                <img src="./assets/images/thumb-2.png" alt="" />
-              </button>
-
-              <button class="thumbnail">
-                <img src="./assets/images/thumb-3.png" alt="" />
-              </button>
-
-              <button class="thumbnail">
-                <img src="./assets/images/thumb-4.png" alt="" />
-              </button>
-
-              <button class="thumbnail">
-                <img src="./assets/images/thumb-5.png" alt="" />
-              </button>
-            </div>
-          </div> -->
-
-          <!-- RIGHT SIDE -->
-          <div class="product-details">
-            <!-- Certifications -->
-            <div class="certifications">
-              <div class="certification-tag">
-                <img
-                  src="./assets/icons/BIS-Hallmark-Color.svg"
-                  alt=""
-                  srcset=""
-                />
-                <span> BIS Certified </span>
-              </div>
-
-              <div class="certification-tag">
-                <img src="./assets/icons/ISI-Mark-Black.svg" alt="" srcset="" />
-                <span> ISO Certified </span>
-              </div>
-
-              <div class="certification-tag">
-                <img
-                  src="./assets/icons/CE Certification.svg"
-                  alt=""
-                  srcset=""
-                />
-                <span> CE Certified </span>
-              </div>
-            </div>
-
-            <!-- Product Title -->
-            <h1 class="product-title">
-              Premium HDPE Pipes & Coils for Modern Infrastructure
-            </h1>
-
-            <!-- Features -->
-            <ul class="feature-list">
-              <li>Leak-Proof Fusion Joints</li>
-              <li>Chemical Resistance</li>
-              <li>50+ Year Service Life</li>
-              <li>Flexible Installation</li>
-              <li>Flexible Installation</li>
+            <ul>
+              <li><a href="#">About Us</a></li>
             </ul>
+          </div>
 
-            <!-- Pricing Card -->
-            <div class="pricing-card">
-              <div class="price-wrapper">
-                <span class="price-label">Price Range</span>
+          <div class="footer-column">
+            <h4>Categories</h4>
 
-                <p class="price">₹4,80,000 - 7,90,000</p>
-              </div>
+            <ul>
+              <li><a href="#">Packaging Industry Solutions</a></li>
+              <li><a href="#">Fishnet Manufacturing</a></li>
+              <li><a href="#">PPMF/Tapes and Twines</a></li>
+              <li><a href="#">FIBC and Woven Sack</a></li>
+              <li><a href="#">Carpet and Rugs Industry</a></li>
+              <li><a href="#">Technical Textiles</a></li>
+            </ul>
+          </div>
 
-              <div class="badge-group">
-                <div class="badge badge-yellow">Shipping: 6-12 days</div>
+          <div class="footer-column">
+            <h4>Products</h4>
 
-                <div class="badge badge-yellow">
-                  Returns: If returned within 7 days
-                </div>
+            <ul>
+              <li><a href="#">Two For One Twister</a></li>
+              <li><a href="#">TPRS Twister Machine</a></li>
+              <li><a href="#">Ring Twisting Machines</a></li>
+              <li><a href="#">Covering Machines</a></li>
+              <li><a href="#">Heat Setting Equipment</a></li>
+              <li><a href="#">Servo Controlled Winders</a></li>
+            </ul>
+          </div>
 
-                <div class="badge badge-gray">
-                  Certifications: ISO Certified, BIS Certified
-                </div>
-              </div>
-            </div>
+          <div class="footer-column">
+            <h4>Contact</h4>
 
-            <!-- CTA Buttons -->
-            <div class="buttons-group">
-              <button class="button button-blue button-hero-primary">
-                Get Custom Quote
-              </button>
+            <ul class="contact-list">
+              <li class="address">
+                <img
+                  src="./assets/icons/location.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
 
-              <button class="button secondary-btn">View Technical Specs</button>
+                <span>
+                  2126, Road No. 2, GIDC Sachin, Surat - 394 230 Gujarat, India
+                </span>
+              </li>
+
+              <li>
+                <img src="./assets/icons/phone.svg" alt="" aria-hidden="true" />
+
+                <a href="tel:+910000000000"> +91 XXX-XXX-XXXX </a>
+              </li>
+
+              <li>
+                <img src="./assets/icons/mail.svg" alt="" aria-hidden="true" />
+
+                <a href="mailto:info@meeraind.com"> info@meeraind.com </a>
+              </li>
+
+              <li>
+                <img
+                  src="./assets/icons/support.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+
+                <a href="mailto:support@meeraind.com"> support@meeraind.com </a>
+              </li>
+            </ul>
+            <hr />
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook">
+                <img
+                  src="./assets/icons/social-icon-linkedin.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+
+              <a href="#" aria-label="Twitter">
+                <img
+                  src="./assets/icons/social-icon-x.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+
+              <a href="#" aria-label="LinkedIn">
+                <img
+                  src="./assets/icons/social-icon-instagram.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
             </div>
           </div>
         </div>
-        <section class="trusted-companies">
-          <p class="trusted-text">Trusted by Hundreds of Companies Globally</p>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+          <p>Copyright © 2025 Meera Industries Limited | All Rights Reserved</p>
 
-          <div class="marquee">
-            <div class="marquee-track">
-              <img src="./assets/images/euroflex-logo.svg" alt="" />
-              <img src="./assets/images/euroflex-logo.svg" alt="" />
-              <img src="./assets/images/euroflex-logo.svg" alt="" />
-              <img src="./assets/images/euroflex-logo.svg" alt="" />
-              <img src="./assets/images/euroflex-logo.svg" alt="" />
-              <img src="./assets/images/euroflex-logo.svg" alt="" />
-              <img src="./assets/images/euroflex-logo.svg" alt="" />
-              <img src="./assets/images/euroflex-logo.svg" alt="" />
-              <img src="./assets/images/euroflex-logo.svg" alt="" />
-              <img src="./assets/images/euroflex-logo.svg" alt="" />
-            </div>
+          <div class="footer-bottom-links">
+            <a href="#" class="privacy-policy-link">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Sitemap</a>
           </div>
-        </section>
-      </div>
-    </section>
-
-    <section class="specifications-section">
-      <div class="container">
-        <div class="specifications-title-sec">
-          <h2>Technical Specifications at a Glance</h2>
-          <p>
-            Comprehensive performance data demonstrating our commitment to
-            quality and engineering excellence.
-          </p>
-        </div>
-
-        <div class="table-wrapper">
-          <table class="spec-table">
-            <tbody>
-              <tr>
-                <th>PARAMETER</th>
-                <th>SPECIFICATION</th>
-              </tr>
-
-              <tr>
-                <td>Pipe Diameter Range</td>
-                <td>20mm to 1200mm (3/4" to 48")</td>
-              </tr>
-
-              <tr>
-                <td>Pressure Ratings</td>
-                <td>PN 2.5, PN 4, PN 6, PN 8, PN 10, PN 12.5, PN 16</td>
-              </tr>
-
-              <tr>
-                <td>Standard Dimension Ratio</td>
-                <td>SDR 33, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11</td>
-              </tr>
-
-              <tr>
-                <td>Operating Temperature</td>
-                <td>-40°C to +60°C (140°F to 140°F)</td>
-              </tr>
-
-              <tr>
-                <td>Service Life</td>
-                <td>50+ years at 20 degrees C, PN 10</td>
-              </tr>
-
-              <tr>
-                <td>Material Density</td>
-                <td>0.95–0.96 g/cm³</td>
-              </tr>
-
-              <tr>
-                <td>Certification Standards</td>
-                <td>IS 4984, ISO 4427, ASTM D3035</td>
-              </tr>
-
-              <tr>
-                <td>Joint Type</td>
-                <td>Butt Fusion, Electrofusion, Mechanical</td>
-              </tr>
-
-              <tr>
-                <td>Coil Length</td>
-                <td>Up to 500m for smaller diameters</td>
-              </tr>
-
-              <tr>
-                <td>Country of Origin</td>
-                <td>India</td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <!-- Footer Section -->
-    <footer></footer>
+    <!-- Modal Popup -->
+    <div id="datasheetModal" class="modal-overlay" aria-hidden="true">
+      <div
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <button class="modal-close" type="button" aria-label="Close modal">
+          <img src="./assets/icons/cross.svg" alt="" aria-hidden="true" />
+        </button>
+
+        <div class="modal-header">
+          <h3 id="modalTitle">Let us email the entire catalogue to you</h3>
+        </div>
+
+        <form class="modal-form">
+          <div class="form-fields">
+            <label>
+              Your Email*
+              <input
+                type="email"
+                name="email"
+                placeholder="example@gmail.com"
+                required
+              />
+            </label>
+
+            <label>
+              Your Contact (Optional)
+              <input type="tel" name="phone" placeholder="+91-0000000000" />
+            </label>
+          </div>
+          <div class="download-brochure-wrapper">
+            <button
+              type="submit"
+              class="button button-blue button-header"
+              disabled
+            >
+              Download Brochure
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
   <script src="./script.js"></script>
 </html>

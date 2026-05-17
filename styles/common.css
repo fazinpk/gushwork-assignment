@@ -1,13 +1,18 @@
 :root {
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Roboto", sans-serif;
+  --font-tertiary: "Urbanist", sans-serif;
 
+  --color-neutral-white: #ffffff;
   --color-primary: #2b3990;
   --color-secondary: #111827;
-  --color-light: #ffffff;
-  --color-dark: #0d0d0d;
-  --color-neutral-800: #4d545c;
+  --color-neutral-black: #0d0d0d;
+
+  --color-neutral-100: #e1e3e8;
+  --color-neutral-200: #cfd1d4;
   --color-neutral-400: #959ba4;
+  --color-neutral-700: #535a61;
+  --color-neutral-800: #4d545c;
 
   --light-4: #f9fafb;
   --light-2: #e5e7eb;
@@ -36,9 +41,39 @@ body {
   padding: 0 100px;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 48px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
 .buttons-group {
   display: flex;
   gap: 12px;
+}
+
+@media (max-width: 360px) {
+  .buttons-group {
+    flex-direction: column;
+  }
 }
 
 .button {
@@ -54,7 +89,7 @@ body {
 
 .button-blue {
   background-color: var(--color-primary);
-  color: var(--color-light);
+  color: var(--color-neutral-white);
 }
 
 .button-blue:hover {
@@ -74,17 +109,17 @@ body {
 
 .secondary-btn:hover {
   background-color: var(--color-primary);
-  color: var(--color-light);
+  color: var(--color-neutral-white);
 
   box-shadow: 0 8px 20px rgba(43, 57, 144, 0.2);
 }
 
 .download-button {
-  border: 1px solid var(--color-light);
+  border: 1px solid var(--color-neutral-white);
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--color-light);
+  color: var(--color-neutral-white);
   margin: 0 auto;
 }
 
@@ -109,5 +144,5 @@ body {
 
 .badge-gray {
   background-color: #f3f4f6;
-  color: var(--color-dark);
+  color: var(--color-neutral-black);
 }

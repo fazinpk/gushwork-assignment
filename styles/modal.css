@@ -13,15 +13,28 @@
   display: flex;
 }
 
+@media (max-width: 576px) {
+  .modal-overlay.open {
+    margin-inline: 15px;
+  }
+}
+
 .modal {
   width: 100%;
   min-width: 550px;
   max-width: 550px;
-  background: #ffffff;
+  background: var(--color-neutral-white);
   border-radius: 12px;
   box-shadow: 0 40px 80px rgba(15, 23, 42, 0.18);
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  .modal {
+    min-width: 100%;
+    max-width: 350px;
+  }
 }
 
 .modal-close {
@@ -32,7 +45,7 @@
   height: 28px;
   border: none;
   border-radius: 6px;
-  background: var(--color-light);
+  background: var(--color-neutral-white);
   cursor: pointer;
   border: 1px solid #e5e7eb;
   padding: 6px;

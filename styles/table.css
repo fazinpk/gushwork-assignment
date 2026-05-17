@@ -4,6 +4,12 @@
   margin-block: 56px;
 }
 
+@media (max-width: 360px) {
+  .table-wrapper {
+    margin-block: 38px;
+  }
+}
+
 .spec-table {
   width: 100%;
   border-collapse: collapse;
@@ -19,7 +25,7 @@
   background: #374151;
   padding: 12px 24px;
   font-weight: var(--weight-medium);
-  color: var(--color-light);
+  color: var(--color-neutral-white);
   letter-spacing: 0.5px;
 }
 
